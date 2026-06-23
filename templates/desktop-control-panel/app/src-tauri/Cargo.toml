@@ -1,0 +1,44 @@
+[package]
+# `default-app` is a placeholder crate name — rename after forking.
+name = "default-app"
+version = "0.2.5"
+description = "Desktop control-panel starter. Rename after forking."
+authors = ["you"]
+license = ""
+repository = ""
+edition = "2021"
+rust-version = "1.77.2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.1", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.11.1", features = [] }
+tauri-plugin-log = "2"
+tauri-plugin-opener = "2"
+
+# V1 client dependencies — see planning/mvp-pilot/2026-05-20-ias-client.md (CL-1)
+keyring = "4.0"
+# Update spine: ManifestFetcher uses reqwest::get (update/commands.rs). `stream`
+# was for the now-removed chunked model download; the spine only needs a plain
+# GET that follows redirects, so the default feature set suffices.
+reqwest = { version = "0.13", default-features = false, features = ["rustls"] }
+rusqlite = { version = "0.40", features = ["bundled"] }
+tokio = { version = "1", features = ["full"] }
+thiserror = "2.0"
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+semver = "1"
+
+[dev-dependencies]
+mockall = "0.14"
+tempfile = "3"

@@ -96,6 +96,15 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Planning',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'planning/backlog',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Deep Dives',
       collapsible: true,
       collapsed: false,

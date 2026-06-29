@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img">
+  <title>CAMELS</title>
+  <rect width="32" height="32" rx="6" fill="#0e7c66"/>
+  <path d="M22 9.5 A8 8 0 1 0 22 22.5" fill="none" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round"/>
+</svg>

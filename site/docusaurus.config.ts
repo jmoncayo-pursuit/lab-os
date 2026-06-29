@@ -18,9 +18,9 @@ const vscodeFile = (relFromSiteDir: string) =>
   `vscode://file/${`${__dirname}/${relFromSiteDir}`.replace(/\\/g, '/')}`;
 
 const config: Config = {
-  title: 'lab-os',
-  tagline: 'spec-driven development with an agentic workspace — the handbook',
-  favicon: 'img/favicon.ico',
+  title: 'CAMELS Lab Handbook',
+  tagline: 'the CAMELS Research Group field guide to spec-driven, agent-assisted development',
+  favicon: 'img/favicon.svg',
 
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -83,9 +83,9 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'lab-os',
+      title: 'CAMELS Lab Handbook',
       logo: {
-        alt: 'lab-os logo',
+        alt: 'CAMELS Lab Handbook logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -110,7 +110,7 @@ const config: Config = {
           href: 'https://github.com/jmoncayo-pursuit/lab-os',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} lab-os`,
+      copyright: `Copyright © ${new Date().getFullYear()} CAMELS Research Group`,
     },
     prism: {
       theme: prismThemes.github,

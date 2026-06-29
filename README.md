@@ -1,8 +1,8 @@
 # lab-os
 
-Cross-repo conventions for `WatsonWBlair`'s lab repos.
+Cross-repo conventions for `jmoncayo-pursuit`'s lab repos.
 
-**New to the lab? Start at the handbook: <https://watsonwblair.github.io/lab-os/>** (source: `site/`).
+**New to the lab? Start at the handbook: <https://jmoncayo-pursuit.github.io/lab-os/>** (source: `site/`).
 The site owns the human-facing docs — setup runbook, working-with-Claude methods, the onboarding
 project, the rules tour. This README is reference for how the conventions in this repo are consumed
 by agents and CI.

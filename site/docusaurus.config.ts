@@ -8,7 +8,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // override for pre-merge review builds, e.g.:
 //   $env:LAB_OS_EDIT_BRANCH = 'feat/site-content'; npm run build
 const editBranch = process.env.LAB_OS_EDIT_BRANCH ?? 'main';
-const editUrl = `https://github.com/WatsonWBlair/lab-os/edit/${editBranch}/site/`;
+const editUrl = `https://github.com/jmoncayo-pursuit/lab-os/edit/${editBranch}/site/`;
 
 // LAB_OS_EDIT_LOCAL=1 makes "Edit this page" open the local source file in
 // VS Code (vscode:// protocol) instead of GitHub — for local review builds
@@ -27,11 +27,11 @@ const config: Config = {
     faster: true, // Enable rspack/SWC toolchain
   },
 
-  url: 'https://watsonwblair.github.io',
+  url: 'https://jmoncayo-pursuit.github.io',
   baseUrl: '/lab-os/',
 
   // GitHub pages deployment config.
-  organizationName: 'WatsonWBlair',
+  organizationName: 'jmoncayo-pursuit',
   projectName: 'lab-os',
 
   onBrokenLinks: 'throw',
@@ -96,7 +96,7 @@ const config: Config = {
           label: 'Handbook',
         },
         {
-          href: 'https://github.com/WatsonWBlair/lab-os',
+          href: 'https://github.com/jmoncayo-pursuit/lab-os',
           label: 'GitHub',
           position: 'right',
         },
@@ -107,7 +107,7 @@ const config: Config = {
       links: [
         {
           label: 'GitHub',
-          href: 'https://github.com/WatsonWBlair/lab-os',
+          href: 'https://github.com/jmoncayo-pursuit/lab-os',
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} lab-os`,

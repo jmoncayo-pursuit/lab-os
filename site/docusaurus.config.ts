@@ -19,7 +19,7 @@ const vscodeFile = (relFromSiteDir: string) =>
 
 const config: Config = {
   title: 'CAMELS Lab Handbook',
-  tagline: 'the CAMELS Research Group field guide to spec-driven, agent-assisted development',
+  tagline: 'the CAMELS Research Group field guide to spec-driven, agent-empowered development',
   favicon: 'img/favicon.svg',
 
   future: {

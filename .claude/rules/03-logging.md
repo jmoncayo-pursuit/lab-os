@@ -47,6 +47,7 @@ Else routes:
 **Refs:** #<PR>, <absolute paths or URLs>
 ```
 
+- Timestamp is machine-local **America/New_York**, from `date "+%Y-%m-%d %H:%M"` - never a model-guessed or UTC time (mixed-TZ headers missort the newest-first sequence; the token stays `YYYY-MM-DD HH:MM`, no zone suffix - `log-lint` anchors on it)
 - ≤1,500 bytes/entry; extra → PR body or spec
 - Count-free — no counts that restale
 - PR# is the durable ref; never a squash SHA (lab altitude: paths/URLs)

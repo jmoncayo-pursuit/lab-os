@@ -21,6 +21,22 @@ text, one each, never renamed. Entry headers are the only other `##` headings al
 
 ---
 
+## 2026-06-30 12:46 — Handbook palette snapped to canonical suite emerald
+
+**Decision:** Replaced the building-exercise teal (#0e7c66/#2eb98f) with the canonical suite emerald (#34d399/#10b981, the Design Agent's exact Infima ramp) on `building-exercise` (commit b231b11), per the lab decision 2026-06-29 20:35 (one design language across suite + handbook). The CAMELS C mark snaps to emerald too (emerald-700 tile for white-stroke legibility). Note: the Design Agent's `design/labos-emerald` applied the same paint but off bare main, dropping the re-home, branding, and planning surface - so the complete emerald state lives on this branch, not there.
+**Why:** Suite and handbook must read as one design language for Watson visibility; applying the canon onto the full handbook keeps all the personalization.
+**Refs:** commit b231b11, <DEV_ROOT>/project_log.md 2026-06-29 20:35, branch building-exercise
+
+---
+
+## 2026-06-29 19:38 — Building sample-plan run end-to-end on this fork
+
+**Decision:** Ran the Building exercise (`docs/workshops/building/sample-plan.md`, Tasks 1-3) in a throwaway worktree on branch `building-exercise`, main checkout untouched - three commits: re-home identity (9b8ccc9), brand the handbook (f43647a), planning surface (7ef0649). Each task's one-command gate ran separately and unpiped, all green: T1 build + zero `WatsonWBlair|watsonwblair` in the config; T2 build + no `title: 'lab-os'` and no `#5b54e8`; T3 build + `BACKLOG.md`, `templates/backlog-item.template.md`, and `site/docs/planning/backlog.md` all present. Built site eyeballed light and dark - teal #0e7c66 palette, CAMELS mark, branded copy, Planning page wired into the sidebar. Local commits only; the push to origin is deferred to the fork owner.
+**Why:** Demonstrate the prescribed onboarding is done on this fork, and rehearse the monitored/autonomous/scaling execution modes with verify-don't-trust: every diff read by hand, not taken from a self-report.
+**Refs:** docs/workshops/building/sample-plan.md, branch building-exercise
+
+---
+
 ## 2026-06-23 07:51 — Plans track at the fork level; only project code nests
 
 **Decision:** Refines the plan/project homing of #43. Methodology artifacts track in the fork itself,

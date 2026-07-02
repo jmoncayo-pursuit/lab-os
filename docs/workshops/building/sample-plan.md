@@ -63,7 +63,7 @@ individually verifiable.
 - No task is larger than one autonomous sitting; if one starts to sprawl, that is a finding — split it.
 - Node ≥ 20. Run `npm ci` once inside `site/` before your first build.
 
-**Notes / assumptions.** You forked `WatsonWBlair/lab-os` to your own GitHub account and cloned it
+**Notes / assumptions.** You forked `CAMELS-Research-Group/lab-os` to your own GitHub account and cloned it
 into your workspace. The strings you replace in Task 1 are the **upstream's** identity, which your
 fork inherited — replacing them is the point, not a leak.
 
@@ -127,7 +127,7 @@ it, "Edit this page" links and the published URL point at the original, not at y
   `organizationName`, `projectName`, `url`, `baseUrl`, the `editUrl` base, and the navbar and footer
   GitHub links no longer name `WatsonWBlair` / `watsonwblair` / the upstream repo.
 - In `README.md`, the top identity line names your own workspace rather than the upstream owner. (The
-  `WatsonWBlair/lab-os` references inside the "How repos consume it" examples are about the upstream
+  `CAMELS-Research-Group/lab-os` references inside the "How repos consume it" examples are about the upstream
   on purpose — leave those.)
 - No `WatsonWBlair` or `watsonwblair` literal remains in `site/docusaurus.config.ts`.
 - The site still builds.

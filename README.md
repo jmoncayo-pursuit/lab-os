@@ -32,7 +32,7 @@ by agents and CI.
 
 ## How repos consume it
 
-**Locally (Cowork)**: the default onboarding path forks lab-os as your dev home, where the rules live natively (`git pull upstream` to stay current) — see the handbook's [Getting Started](https://watsonwblair.github.io/lab-os/docs/getting-started). The multi-repo power-user pattern instead clones lab-os under a neutral `<DEV_ROOT>` and links its rules up with a junction/symlink:
+**Locally (Cowork)**: the default onboarding path forks lab-os as your dev home, where the rules live natively (`git pull upstream` to stay current) — see the handbook's [Getting Started](https://camels-research-group.github.io/lab-os/docs/getting-started). The multi-repo power-user pattern instead clones lab-os under a neutral `<DEV_ROOT>` and links its rules up with a junction/symlink:
 
 ```powershell
 # Windows (PowerShell) — junction, no admin required
@@ -51,7 +51,7 @@ ln -s <DEV_ROOT>/lab-os/.claude/rules <DEV_ROOT>/.claude/rules
   with: { path: pr-repo }
 - uses: actions/checkout@v4
   with:
-    repository: WatsonWBlair/lab-os
+    repository: CAMELS-Research-Group/lab-os
     path: lab-os
 ```
 

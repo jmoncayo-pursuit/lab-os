@@ -21,6 +21,14 @@ text, one each, never renamed. Entry headers are the only other `##` headings al
 
 ---
 
+## 2026-07-02 16:53 — Building exercise landed on main; handbook deployed to the fork's Pages
+
+**Decision:** Merged `design/labos-org-sweep` (building-exercise + the CAMELS-Research-Group org-ref sweep + backlog items B2 glossary and B3 first-session checklist) into `main` (merge 19f7f03), pushed to origin, and deployed the site via the deploy-site workflow. First deploy failed because GitHub Pages was not enabled on the fork; enabled it (build_type workflow) and re-ran to green. Live and verified at https://jmoncayo-pursuit.github.io/lab-os/ - emerald palette in the served CSS with zero old-brand hexes, canonical org refs on getting-started, glossary and checklist pages serving. BACKLOG.md B1-B3 all done; the Building exercise is complete and this fork is now the working dev-home handbook.
+**Why:** Jean's explicit go to finish the exercise and land it, so the fork stops being an exercise artifact and becomes the lab's usable front door.
+**Refs:** merge 19f7f03, https://jmoncayo-pursuit.github.io/lab-os/, BACKLOG.md, docs/workshops/building/sample-plan.md
+
+---
+
 ## 2026-06-30 12:46 — Handbook palette snapped to canonical suite emerald
 
 **Decision:** Replaced the building-exercise teal (#0e7c66/#2eb98f) with the canonical suite emerald (#34d399/#10b981, the Design Agent's exact Infima ramp) on `building-exercise` (commit b231b11), per the lab decision 2026-06-29 20:35 (one design language across suite + handbook). The CAMELS C mark snaps to emerald too (emerald-700 tile for white-stroke legibility). Note: the Design Agent's `design/labos-emerald` applied the same paint but off bare main, dropping the re-home, branding, and planning surface - so the complete emerald state lives on this branch, not there.

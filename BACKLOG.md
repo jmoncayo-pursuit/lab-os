@@ -11,8 +11,8 @@ Read the **Index** first - it is the "what is ready right now" view. The full it
 | id | title | size | status |
 |---|---|---|---|
 | B1 | "Edit this page" resolves to my fork | S | done |
-| B2 | A CAMELS glossary page in the handbook | M | ready |
-| B3 | Printable "first session" checklist | S | ready |
+| B2 | A CAMELS glossary page in the handbook | M | done |
+| B3 | Printable "first session" checklist | S | done |
 
 ## Inbox
 
@@ -41,7 +41,7 @@ Read the **Index** first - it is the "what is ready right now" view. The full it
 - **Rough size:** M - a few sittings (collect the terms, write the entries, wire the sidebar).
 - **Done when:** the built site serves a `/docs/glossary` page that defines at least the terms used on the front page, and the build is green.
 - **Depends on:** -
-- **Status:** ready
+- **Status:** done
 
 ## B3 - Printable "first session" checklist
 
@@ -51,4 +51,4 @@ Read the **Index** first - it is the "what is ready right now" view. The full it
 - **Rough size:** S - one sitting.
 - **Done when:** a single printable page exists in the handbook whose steps a reader can tick through without opening another tab.
 - **Depends on:** -
-- **Status:** ready
+- **Status:** done

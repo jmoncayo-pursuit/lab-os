@@ -36,6 +36,7 @@ const sidebars: SidebarsConfig = {
             'working-with-claude/review',
           ],
         },
+        'first-session-checklist',
         {
           type: 'doc',
           id: 'onboarding-project',
@@ -113,6 +114,7 @@ const sidebars: SidebarsConfig = {
         'repo-setup',
         'play-testing',
         'tooling-tour',
+        'glossary',
       ],
     },
   ],

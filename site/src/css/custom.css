@@ -38,3 +38,21 @@
   --ifm-color-primary-lightest: #d1fae5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Print: content only, so pages like the first-session checklist fit a sheet */
+@media print {
+  .navbar,
+  .theme-doc-sidebar-container,
+  .theme-doc-toc-desktop,
+  .theme-doc-toc-mobile,
+  .theme-doc-breadcrumbs,
+  .theme-doc-footer,
+  .pagination-nav,
+  footer.footer {
+    display: none !important;
+  }
+
+  main .container {
+    max-width: 100% !important;
+  }
+}

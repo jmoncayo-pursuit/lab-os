@@ -7,6 +7,7 @@ text, one each, never renamed. Entry headers are the only other `##` headings al
 
 ## Standing Decisions
 
+- 2026-07-03 14:43 — Loopback bind-pattern is a lab rule; widening is a logged decision · .claude/rules/05-network-boundaries.md
 - 2026-06-23 07:51 — Plans track at the fork level; only project code nests · #44
 - 2026-06-23 06:30 — Fork-of-lab-os is the default Claude-powered dev home · #43
 - 2026-06-23 03:05 — Building sample plan ships as a facilitator-only fallback · #42
@@ -18,6 +19,15 @@ text, one each, never renamed. Entry headers are the only other `##` headings al
 - 2026-06-10 17:45 — Adopt lab-wide logging & documentation standard · #6
 
 ## Entries
+
+---
+
+## 2026-07-03 14:43 — Loopback bind-pattern adopted as lab rule 05
+
+**Decision:** Added `.claude/rules/05-network-boundaries.md`: every fleet/suite listener binds `127.0.0.1` explicitly (env-overridable, bare `listen(port)` is a defect), guards browser-facing routes against DNS rebinding with loopback-only CORS, adds auth before any side-effect route widens, and treats widening beyond loopback as a per-service logged decision. PR-template checklist line and rules-explained site section added with it.
+**Why:** The 2026-07-03 fleet codebase audit found three services bound 0.0.0.0 while `~/.fleet/fleet-serve` already carried the correct pattern - drift, not ignorance. A rule the next service copies by default kills the class; the point fixes ride separately (t-cfdd2d, t-ddb958).
+**Alternatives:** A STANDARDS.md line (no such file exists here) or folding into 01-workflow (wrong owner - this is a runtime boundary, not commit/PR mechanics); a new always-loaded 0x rule keeps it in every session's context at 1.9KB.
+**Refs:** .claude/rules/05-network-boundaries.md, ~/Desktop/CAMELS/_plans/fleet-codebase-audit-2026-07-03.md, ~/.fleet/fleet-serve
 
 ---
 

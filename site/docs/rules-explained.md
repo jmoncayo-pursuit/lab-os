@@ -87,6 +87,18 @@ Internalize two things:
 - **Write for the tier.** Agent docs are dense and budget-capped; engineering docs skimmable with
   explicit contracts; public docs free of internal jargon and codenames.
 
+## 05 — Network boundaries
+
+Source of truth:
+[`05-network-boundaries.md`](https://github.com/CAMELS-Research-Group/lab-os/blob/main/.claude/rules/05-network-boundaries.md)
+
+Governs every service that opens a listening socket. Local tools bind loopback (`127.0.0.1`) explicitly, guard browser-facing routes against DNS rebinding, and never widen exposure as a silent config default. The pattern exists because a bare `listen(port)` binds every interface - the difference between a local tool and something anyone on the same wifi can drive.
+
+Internalize two things:
+
+- **Loopback is explicit, not assumed.** A listener with no host argument is a defect; bind `127.0.0.1` and make the host an env override.
+- **Widening is a decision.** Exposing a service beyond loopback happens per service, with auth on side-effect routes, an owner's explicit go, and a log entry - never by drift.
+
 ## Quick answers
 
 | Question | Rule file |
@@ -95,3 +107,4 @@ Internalize two things:
 | What can I never commit? | [`02-data-protection.md`](https://github.com/CAMELS-Research-Group/lab-os/blob/main/.claude/rules/02-data-protection.md) |
 | When do I write a log entry? | [`03-logging.md`](https://github.com/CAMELS-Research-Group/lab-os/blob/main/.claude/rules/03-logging.md) |
 | Which doc owns a fact? | [`04-docs.md`](https://github.com/CAMELS-Research-Group/lab-os/blob/main/.claude/rules/04-docs.md) |
+| How does a service bind its port? | [`05-network-boundaries.md`](https://github.com/CAMELS-Research-Group/lab-os/blob/main/.claude/rules/05-network-boundaries.md) |
